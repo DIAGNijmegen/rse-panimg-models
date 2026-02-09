@@ -1,0 +1,43 @@
+[project]
+authors = [
+    {name = "James Meakin"},
+]
+license = {text = "Apache-2.0"}
+requires-python = "<4.0,>=3.10"
+dependencies = [
+    "pydantic>=2",
+]
+name = "panimg-models"
+version = "1.0.0"
+description = "Models for panimg."
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Healthcare Industry",
+    "Operating System :: POSIX",
+]
+
+[project.urls]
+repository = "https://github.com/DIAGNijmegen/rse-panimg-models"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-xdist",
+    "pytest-randomly",
+    "pytest-cov",
+    "pre-commit",
+]
+
+[tool.uv]
+package = true
+
+[tool.isort]
+profile = "black"
+known_first_party = ["panimg", "tests"]
+line_length = 79
+
+[tool.black]
+line-length = 79
+target-version = ['py310']
