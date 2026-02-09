@@ -1,4 +1,4 @@
-# PanImg Module
+# PanImg Models
 
 Data models for medical image processing and management.
 
