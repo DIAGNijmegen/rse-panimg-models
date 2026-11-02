@@ -88,6 +88,6 @@ pytest test_module.py -v
 
 ## Requirements
 
-- Python 3.10+
+- Python 3.11+
 - pydantic
 - pytest (for testing)
